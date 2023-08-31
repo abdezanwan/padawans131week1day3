@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!--# I get my code to work by following this video  https://www.youtube.com/watch?v=1rcXxaqkyw4-->
+    <title>Amazon SignIn Page</title>
+</head>
+<body>
+   
+    <section>
+        <div class="logo">
+            <img src="az.png" alt="">
+            <span><div class="in"></div></span>
+        </div>
+        <div class="card">
+            <h1>Sign in</h1>
+   
+            <form action="login.php" method="post">
+                <label for="email">Email (Phone for mobile accounts)</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required  >
+                <div class="forgot-password">
+                    <a href="forgot_password.html">Forgot Password?</a>
+                </div>
+                <button type="submit">Sign In</button>
+                
+               
+                <p>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            </form>
+        </div>
+        <div class="keep-signed-in">
+            <label>
+                <input type="checkbox" name="keep_signed_in"> Keep me signed in
+            </label>
+        </div>
+        <div class="break">
+            <p>New to Amazon</p> 
+        </div>
+        <div class="create-account-button">
+            <button>Create your Amazon account</button>
+        </div>
+    </section>
+</body>
+</html>
